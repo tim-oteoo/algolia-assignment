@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin-allow-popups">
+  <link rel="shortcut icon" href="./favicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7/themes/algolia-min.css">
+  <link rel="stylesheet" href="./src/index.css">
+  <link rel="stylesheet" href="./src/app.css">
+  <title>algolia-sa-assignment</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo-container">
+        <img class="header__logo" src="src/Assets/logo.svg" alt="Logo">
+      </div>
+      <div class="header__searchbox-container" id="searchbox"></div>
+    </div>
+  </header>
+
+  <div class="results">
+    <div class="results__container">
+      <div class="facet-panel">
+        <div class="facet-panel__container">
+          <h2>Brand</h2>
+          <div class="facet-panel__facet-list" id="brand-facet"></div>
+        </div>
+        <div class="facet-panel__container">
+          <h2>Categories</h2>
+          <div class="facet-panel__facet-list" id="categories-facet"></div>
+        </div>
+        <div class="facet-panel__container">
+          <h2>Price</h2>
+          <div class="facet-panel__facet-list" id="price-range"></div>
+        </div>
+        <div class="facet-panel__container">
+          <h2>Rating</h2>
+          <div class="facet-panel__facet-list" id="rating-menu"></div>
+        </div>
+      </div>
+      <div class="search-panel">
+        <div class="search-panel__sort-by" id="sort-by"></div>
+        <div class="search-panel__results">
+          <div id="hits"></div>
+        </div>
+        <div id="pagination"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./src/app.js" type="module" defer></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  background: #252321;
+  padding: 1rem 2rem;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.header__logo-container {
+  min-width: 150px;
+}
+
+.header__logo {
+  max-width: 100%;
+}
+
+.header__searchbox-container {
+  height: 32px;
+  flex-grow: 1;
+  margin-left: 5%;
+}
+
+.results {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 1rem 0;
+}
+
+.results__container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.facet-panel {
+  flex: 0 0 220px;
+  margin-right: 1rem;
+}
+
+.facet-panel__container {
+  background: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.facet-panel__facet-list {
+  margin-top: 0.5rem;
+}
+
+.search-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-panel__sort-by {
+  margin-bottom: 1rem;
+}
+
+.search-panel__results {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ais-Hits-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+}
+
+.ais-Hits-item {
+  flex: 1 1 calc(33.333% - 1rem);
+  background: white;
+  border-radius: 5px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+#pagination {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.ais-Highlight-highlighted {
+  color: inherit;
+  font-size: inherit;
+}
+
+.result-hit button {
+  pointer-events: auto;
+  margin-top: auto;
+  background-color: #252321;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.result-hit button:hover {
+  background-color: #333;
+}
+
+.ais-RangeSlider {
+  display: block;
+  width: calc(100% - 20px);
+  margin: 0 auto;
+}
